@@ -82,108 +82,48 @@
   <%@include file="./shared/navbar.jsp" %>
   
   <!-- #header -->
-
-  <!--==========================
-    Intro Section
-  ============================-->
   
-  <div class="content">
-  <c:if test="${userClickHome == true}">
-   <%@include file="intro.jsp" %>
-   </c:if>
-  
-  <%-- <c:if test="${userClickHome == true}">
-   <%@include file="intro.jsp" %>
-   </c:if>
-   
-   <c:if test="${userClickHome == true}">
-   <%@include file="intro.jsp" %>
-   </c:if> --%>
-   
-   
-  
-  </div>
-  <!-- #intro -->
+  <div class="wrapper">
 
-  <main id="main">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display  -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="${contextRoot}/intro">Home</a>
 
-    <!--==========================
-      About Us Section
-    ============================-->
-    
-    <%@include file="about.jsp" %>
-    
-    <!-- #about -->
+				</div>
 
-    <!--==========================
-      Services Section
-    ============================-->
-    
-    <%@include file="services.jsp" %>
-    
-    <!-- #services -->
+			</div>
 
-    <!--==========================
-      Why Us Section
-    ============================-->
-    
-    <%@include file="whyus.jsp" %>
-    
-     <!--==========================
-      Call To Action Section
-    ============================-->
-    
-    <%@include file="calltous.jsp" %>
-    
-    <!-- #call-to-action -->
+		</nav>
 
-    <!--==========================
-      Portfolio Section
-    ============================-->
-   
-   <%@include file="portfolio.jsp" %>
-   
-   <!-- #portfolio -->
+		<!-- Page Content -->
 
-    <!--==========================
-      Clients Section
-    ============================-->
-    
-    <%@include file="testimonials.jsp" %>
-    
-    <!-- #testimonials -->
-    
-    <!--==========================
-      Frequently Asked Questions Section
-    ============================-->
-    
-    <%@include file="faq.jsp" %>
-    
-    <!-- #faq -->
+		<div class="content">
 
-    <!--==========================
-      Team Section
-    ============================-->
-    
-    <%@include file="team.jsp" %>
-    
-    <!-- #team -->
+			<div class="container">
 
-    <!--==========================
-      Clients Section
-    ============================-->
-    
-    <%@include file="client.jsp" %>
-   
-    <!--==========================
-      Contact Section
-    ============================-->
-    <%@include file="contact.jsp" %>
-    
-    <!-- #contact -->
+				<div class="row">
 
-  </main>
+					<div class="col-xs-12">
 
+						<div class="jumbotron">
+
+							<h1>${errorTitle}</h1>
+							</hr>
+
+							<blockquote style="word-wrap:break-word">${errorDescription}</blockquote>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+ 
   <!--==========================
     Footer
   ============================-->

@@ -8,8 +8,8 @@
       <div class="intro-info">
         <h2>We provide<br><span>solutions</span><br>for your business!</h2>
         <div>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          <a href="#services" class="btn-services scrollto">Our Services</a>
+          <a href="${contextRoot}/register" class="btn-get-started scrollto">Sign Up</a>
+          <a href="${contextRoot}/login" class="btn-services scrollto">Login</a>
         </div>
       </div>
 
